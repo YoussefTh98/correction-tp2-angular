@@ -1,0 +1,8 @@
+.carte-cours {
+  cursor: pointer;
+}
+
+.carte-cours.actif {
+  border: 2px solid #e4002b;
+  background-color: #fff0f2;
+}
