@@ -5,9 +5,16 @@
     <aside>
         <app-detail-cours [cours]="coursSelectionne"></app-detail-cours>
     </aside>
-    
+   
+
   </main>
   <footer>
+      @defer (on viewport) { 
     <app-pied-page></app-pied-page>
+    } @placeholder { 
+  <div class="pied-page-placeholder">...</div> 
+} @loading { 
+  <p>Chargement...</p> 
+} 
   </footer>
 </div>
